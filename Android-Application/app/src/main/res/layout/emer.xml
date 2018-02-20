@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/accent_material_dark">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="646dp"
+            android:background="@color/background_floating_material_dark">
+
+
+            <Button
+                android:id="@+id/emergency_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:width="200dp"
+                android:height="20dp"
+                android:layout="@id/submit"
+                android:text="emergency" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

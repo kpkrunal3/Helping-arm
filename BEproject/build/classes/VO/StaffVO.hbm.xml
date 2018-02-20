@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="VO.StaffVO" table="Staff">
+<id name="staffId" type="int" column="StaffId">
+<generator class="increment"></generator>
+</id>
+
+<property name="firstName">
+<column name="FirstName"></column>
+</property>
+
+<property name="lastName">
+<column name="LastName"></column>
+</property>
+
+<property name="middleName">
+<column name="MiddleName"></column>
+</property>
+
+<property name="mobileNumber">
+<column name="MobileNumber"></column>
+</property>
+
+<property name="email">
+<column name="Email"></column>
+</property>
+
+
+<property name="addressLine1">
+<column name="AddressLine1"></column>
+</property>
+
+<property name="addressLine2">
+<column name="AddressLine2"></column>
+</property>
+
+<property name="pincode">
+<column name="Pincode"></column>
+</property>
+
+<many-to-one name="postVO" class="VO.PostVO" column="post"></many-to-one>
+<many-to-one name="stateVO" class="VO.StateVO" column="State"></many-to-one>
+<many-to-one name="cityVO" class="VO.CityVO" column="City"></many-to-one>
+</class>
+</hibernate-mapping>

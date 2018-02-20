@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="VO.AmbulanceVO" table="Ambulance">
+<id name="ambulanceId" type="int" column="AmbulanceId">
+<generator class="increment"></generator>
+</id>
+
+<property name="number">
+<column name="Number"></column>
+</property>
+<property name="addressLine1">
+<column name="AddressLine1"></column>
+</property>
+<property name="addressLine2">
+<column name="AddressLine2"></column>
+</property>
+<property name="latitude">
+<column name="Latitude"></column>
+</property>
+<property name="longitude">
+<column name="longitude"></column>
+</property>
+<property name="status">
+<column name="Status"></column>
+</property>
+
+<property name="pincode">
+<column name="Pincode"></column>
+</property>
+
+<many-to-one name="stateVO" class="VO.StateVO" column="StateId"></many-to-one>
+<many-to-one name="cityVO" class="VO.CityVO" column="CityId"></many-to-one>
+<many-to-one name="areaVO" class="VO.AreaVO" column="AreaId"></many-to-one>
+<many-to-one name="staffVO1" class="VO.StaffVO" column="DriverId"></many-to-one>
+<many-to-one name="staffVO2" class="VO.StaffVO" column="DoctorId"></many-to-one>
+
+
+</class>
+</hibernate-mapping>

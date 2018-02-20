@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">welcome to 108 servicies</string>
+    <string name="action_settings">Settings</string>
+    <string name="krunal">New Button</string>
+    <string name="emergency">New Button</string>
+</resources>

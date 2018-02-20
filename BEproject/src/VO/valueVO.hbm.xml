@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="VO.valueVO" table="value">
+<id name="valueid" type="int" column="valueId">
+<generator class="increment"></generator>
+</id>
+
+<property name="lati">
+<column name="Latitude"></column>
+</property>
+
+<property name="longi">
+<column name="Longitude"></column>
+</property>
+
+
+
+</class>
+</hibernate-mapping>
